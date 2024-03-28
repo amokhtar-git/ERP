@@ -1,0 +1,144 @@
+#wrapper {
+    margin: 0px;
+    height: 4000px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #3d5763, #d0d0d06d);
+    border-radius: 1px;
+    padding: 2px;
+}
+#wrapper #mainList div ul {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 10px;
+    width: 85px;
+    background-color: #1d1d2b;
+    overflow: hidden;
+    transition: width 0.5s;
+    position: fixed;
+    overflow-y: auto; /* Make the <ul> scrollable vertically */
+    max-height: calc(100vh - 1px); /* Set a max-height to fit the viewport minus padding */
+}
+/* Scrollbar styles */
+#wrapper #mainList div ul::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+}
+
+#wrapper #mainList div ul::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+#wrapper #mainList div ul::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+}
+
+#wrapper #mainList div ul::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+#wrapper #mainList div ul:hover{
+    width: 250px;
+    transition: .5s;
+    
+}
+#wrapper #mainList div ul li {
+    margin-left: 20px; /* help | Adjust margin as needed */
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    line-height: 48px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+}
+#wrapper #mainList div ul li:hover{
+    background-color: #ffffff55;
+    transition: .5s;
+    transition: width 0.5s;
+}
+#wrapper #mainList div ul li i {
+    color: white;
+    font-size: 36px;
+    display: inline-block;
+    width: 16px; /*help |  Adjust width of icon */
+    /* height: 16px; help | Adjust height of icon */
+    margin-right: 55px; /* help | Adjust margin between icon and text */
+}
+#wrapper #mainList div ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+#wrapper #headList nav {
+    margin-left: 85px;
+    background-color: #333;
+    /* overflow: hidden; */
+}
+
+#wrapper #headList nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#wrapper #headList nav ul li {
+    float: left;
+}
+
+#wrapper #headList nav ul li a , #wrapper #headList nav ul li p{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px 0px 20px;
+    text-decoration: none;
+}
+#wrapper #headList nav ul li p{
+    font: 30px bold ;
+    color: #3d5763;
+}
+#wrapper #headList nav ul li a:hover {
+    background-color: #555;
+    /* border-radius: 10px; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f900;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+}
+.dropdown-content a {
+    color: white;
+    padding: 5px 5px 5px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+.dropdown > a {
+    padding-bottom: 27px;
+}
+.user-profile {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile .user-name {
+    color: white;
+    font-size: 16px;
+}
